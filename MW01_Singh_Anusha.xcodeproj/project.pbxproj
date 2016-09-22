@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0369CB0E1D943274009346EE /* AppLogo_256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = 0369CB0D1D943274009346EE /* AppLogo_256x256.png */; };
+		0369CB101D94345C009346EE /* AppLogo_128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 0369CB0F1D94345C009346EE /* AppLogo_128x128.png */; };
 		03BB18971D935B2D00DB69E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB18961D935B2D00DB69E5 /* AppDelegate.swift */; };
 		03BB189C1D935B2D00DB69E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB189A1D935B2D00DB69E5 /* Main.storyboard */; };
 		03BB189E1D935B2D00DB69E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BB189D1D935B2D00DB69E5 /* Assets.xcassets */; };
@@ -54,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0369CB0D1D943274009346EE /* AppLogo_256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppLogo_256x256.png; path = Assets/Images/AppLogo_256x256.png; sourceTree = "<group>"; };
+		0369CB0F1D94345C009346EE /* AppLogo_128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppLogo_128x128.png; path = Assets/Images/AppLogo_128x128.png; sourceTree = "<group>"; };
 		03BB18931D935B2D00DB69E5 /* MW01_Singh_Anusha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MW01_Singh_Anusha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BB18961D935B2D00DB69E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03BB189B1D935B2D00DB69E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 		03BB18CF1D937AC900DB69E5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0369CB0F1D94345C009346EE /* AppLogo_128x128.png */,
+				0369CB0D1D943274009346EE /* AppLogo_256x256.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -329,11 +335,13 @@
 				03BB18E91D937C7E00DB69E5 /* Biko_Light-Restricted.otf in Resources */,
 				03BB18A11D935B2D00DB69E5 /* LaunchScreen.storyboard in Resources */,
 				03BB189E1D935B2D00DB69E5 /* Assets.xcassets in Resources */,
+				0369CB101D94345C009346EE /* AppLogo_128x128.png in Resources */,
 				03BB189C1D935B2D00DB69E5 /* Main.storyboard in Resources */,
 				03BB18EA1D937C7E00DB69E5 /* Biko_Regular.otf in Resources */,
 				03BB18ED1D937C7E00DB69E5 /* CaviarDreams_Italic.ttf in Resources */,
 				03BB18F61D937C7E00DB69E5 /* Rounded_Elegance.ttf in Resources */,
 				03BB18E71D937C7E00DB69E5 /* Biko_Bold.otf in Resources */,
+				0369CB0E1D943274009346EE /* AppLogo_256x256.png in Resources */,
 				03BB18EE1D937C7E00DB69E5 /* CaviarDreams.ttf in Resources */,
 				03BB18EB1D937C7E00DB69E5 /* CaviarDreams_Bold.ttf in Resources */,
 				03BB18E51D937C7E00DB69E5 /* abeatbyKaiRegular.otf in Resources */,
@@ -605,6 +613,7 @@
 				03BB18BD1D935B2D00DB69E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03BB18BE1D935B2D00DB69E5 /* Build configuration list for PBXNativeTarget "MW01_Singh_AnushaTests" */ = {
 			isa = XCConfigurationList;
@@ -613,6 +622,7 @@
 				03BB18C01D935B2D00DB69E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03BB18C11D935B2D00DB69E5 /* Build configuration list for PBXNativeTarget "MW01_Singh_AnushaUITests" */ = {
 			isa = XCConfigurationList;
@@ -621,6 +631,7 @@
 				03BB18C31D935B2D00DB69E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

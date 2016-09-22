@@ -10,6 +10,9 @@ import UIKit
 
 class VC1: UIViewController
 {
+    @IBOutlet weak var currentLapLabel: UILabel!
+    @IBOutlet weak var totalTimeLabel: UILabel!
+    @IBOutlet weak var numberOfLapsLabel: UILabel!
 
     override func viewDidLoad()
     {
@@ -27,7 +30,19 @@ class VC1: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func StartButtonClicked(_ sender: AnyObject)
+    {
+    }
+    
+    @IBAction func StopButtonClicked(_ sender: AnyObject)
+    {
+    }
+    
+    @IBAction func ShowStatsButtonClicked(_ sender: AnyObject) {
+    }
+    
+    
     // MARK: - Table view data source
 
     /*override func numberOfSections(in tableView: UITableView) -> Int

@@ -24,9 +24,9 @@ class VC2: UIViewController
     {
         super.viewDidLoad()
         
-        //navBar.frame = CGRect(x: 0, y: 0, width: 414, height: 66)
+        navBar.frame = CGRect(x: 0, y: 0, width: 414, height: 66)
 
-        let lineFastSlow = CGRect(x: 20, y: 44, width: 374, height: 1)
+        //let lineFastSlow = CGRect(x: 20, y: 44, width: 374, height: 1)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
