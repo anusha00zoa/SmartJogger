@@ -8,12 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		03BB18971D935B2D00DB69E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB18961D935B2D00DB69E5 /* AppDelegate.swift */; };
-		03BB18991D935B2D00DB69E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB18981D935B2D00DB69E5 /* ViewController.swift */; };
 		03BB189C1D935B2D00DB69E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB189A1D935B2D00DB69E5 /* Main.storyboard */; };
 		03BB189E1D935B2D00DB69E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BB189D1D935B2D00DB69E5 /* Assets.xcassets */; };
 		03BB18A11D935B2D00DB69E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB189F1D935B2D00DB69E5 /* LaunchScreen.storyboard */; };
 		03BB18AC1D935B2D00DB69E5 /* MW01_Singh_AnushaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB18AB1D935B2D00DB69E5 /* MW01_Singh_AnushaTests.swift */; };
 		03BB18B71D935B2D00DB69E5 /* MW01_Singh_AnushaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB18B61D935B2D00DB69E5 /* MW01_Singh_AnushaUITests.swift */; };
+		03BB18CC1D9373F500DB69E5 /* VC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB18CA1D9373F500DB69E5 /* VC1.swift */; };
+		03BB18CD1D9373F500DB69E5 /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB18CB1D9373F500DB69E5 /* VC2.swift */; };
+		03BB18E41D937C7E00DB69E5 /* ABEAKRG.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18D11D937C7E00DB69E5 /* ABEAKRG.TTF */; };
+		03BB18E51D937C7E00DB69E5 /* abeatbyKaiRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18D21D937C7E00DB69E5 /* abeatbyKaiRegular.otf */; };
+		03BB18E61D937C7E00DB69E5 /* Biko_Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18D31D937C7E00DB69E5 /* Biko_Black.otf */; };
+		03BB18E71D937C7E00DB69E5 /* Biko_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18D41D937C7E00DB69E5 /* Biko_Bold.otf */; };
+		03BB18E81D937C7E00DB69E5 /* Biko_Light Readme.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18D51D937C7E00DB69E5 /* Biko_Light Readme.rtf */; };
+		03BB18E91D937C7E00DB69E5 /* Biko_Light-Restricted.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18D61D937C7E00DB69E5 /* Biko_Light-Restricted.otf */; };
+		03BB18EA1D937C7E00DB69E5 /* Biko_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18D71D937C7E00DB69E5 /* Biko_Regular.otf */; };
+		03BB18EB1D937C7E00DB69E5 /* CaviarDreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18D81D937C7E00DB69E5 /* CaviarDreams_Bold.ttf */; };
+		03BB18EC1D937C7E00DB69E5 /* CaviarDreams_BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18D91D937C7E00DB69E5 /* CaviarDreams_BoldItalic.ttf */; };
+		03BB18ED1D937C7E00DB69E5 /* CaviarDreams_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18DA1D937C7E00DB69E5 /* CaviarDreams_Italic.ttf */; };
+		03BB18EE1D937C7E00DB69E5 /* CaviarDreams.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18DB1D937C7E00DB69E5 /* CaviarDreams.ttf */; };
+		03BB18EF1D937C7E00DB69E5 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18DC1D937C7E00DB69E5 /* Comfortaa-Bold.ttf */; };
+		03BB18F01D937C7E00DB69E5 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18DD1D937C7E00DB69E5 /* Comfortaa-Light.ttf */; };
+		03BB18F11D937C7E00DB69E5 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18DE1D937C7E00DB69E5 /* Comfortaa-Regular.ttf */; };
+		03BB18F21D937C7E00DB69E5 /* Fragmentcore.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18DF1D937C7E00DB69E5 /* Fragmentcore.otf */; };
+		03BB18F31D937C7E00DB69E5 /* minimal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18E01D937C7E00DB69E5 /* minimal.otf */; };
+		03BB18F41D937C7E00DB69E5 /* NixieOne.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18E11D937C7E00DB69E5 /* NixieOne.ttf */; };
+		03BB18F51D937C7E00DB69E5 /* rm_typerighter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18E21D937C7E00DB69E5 /* rm_typerighter.ttf */; };
+		03BB18F61D937C7E00DB69E5 /* Rounded_Elegance.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18E31D937C7E00DB69E5 /* Rounded_Elegance.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +56,6 @@
 /* Begin PBXFileReference section */
 		03BB18931D935B2D00DB69E5 /* MW01_Singh_Anusha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MW01_Singh_Anusha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BB18961D935B2D00DB69E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03BB18981D935B2D00DB69E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		03BB189B1D935B2D00DB69E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03BB189D1D935B2D00DB69E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03BB18A01D935B2D00DB69E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +66,27 @@
 		03BB18B21D935B2D00DB69E5 /* MW01_Singh_AnushaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MW01_Singh_AnushaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BB18B61D935B2D00DB69E5 /* MW01_Singh_AnushaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MW01_Singh_AnushaUITests.swift; sourceTree = "<group>"; };
 		03BB18B81D935B2D00DB69E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03BB18CA1D9373F500DB69E5 /* VC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC1.swift; sourceTree = "<group>"; };
+		03BB18CB1D9373F500DB69E5 /* VC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
+		03BB18D11D937C7E00DB69E5 /* ABEAKRG.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = ABEAKRG.TTF; path = Assets/Fonts/ABEAKRG.TTF; sourceTree = "<group>"; };
+		03BB18D21D937C7E00DB69E5 /* abeatbyKaiRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = abeatbyKaiRegular.otf; path = Assets/Fonts/abeatbyKaiRegular.otf; sourceTree = "<group>"; };
+		03BB18D31D937C7E00DB69E5 /* Biko_Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Biko_Black.otf; path = Assets/Fonts/Biko_Black.otf; sourceTree = "<group>"; };
+		03BB18D41D937C7E00DB69E5 /* Biko_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Biko_Bold.otf; path = Assets/Fonts/Biko_Bold.otf; sourceTree = "<group>"; };
+		03BB18D51D937C7E00DB69E5 /* Biko_Light Readme.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = "Biko_Light Readme.rtf"; path = "Assets/Fonts/Biko_Light Readme.rtf"; sourceTree = "<group>"; };
+		03BB18D61D937C7E00DB69E5 /* Biko_Light-Restricted.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Biko_Light-Restricted.otf"; path = "Assets/Fonts/Biko_Light-Restricted.otf"; sourceTree = "<group>"; };
+		03BB18D71D937C7E00DB69E5 /* Biko_Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Biko_Regular.otf; path = Assets/Fonts/Biko_Regular.otf; sourceTree = "<group>"; };
+		03BB18D81D937C7E00DB69E5 /* CaviarDreams_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CaviarDreams_Bold.ttf; path = Assets/Fonts/CaviarDreams_Bold.ttf; sourceTree = "<group>"; };
+		03BB18D91D937C7E00DB69E5 /* CaviarDreams_BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CaviarDreams_BoldItalic.ttf; path = Assets/Fonts/CaviarDreams_BoldItalic.ttf; sourceTree = "<group>"; };
+		03BB18DA1D937C7E00DB69E5 /* CaviarDreams_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CaviarDreams_Italic.ttf; path = Assets/Fonts/CaviarDreams_Italic.ttf; sourceTree = "<group>"; };
+		03BB18DB1D937C7E00DB69E5 /* CaviarDreams.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CaviarDreams.ttf; path = Assets/Fonts/CaviarDreams.ttf; sourceTree = "<group>"; };
+		03BB18DC1D937C7E00DB69E5 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Bold.ttf"; path = "Assets/Fonts/Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		03BB18DD1D937C7E00DB69E5 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Light.ttf"; path = "Assets/Fonts/Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		03BB18DE1D937C7E00DB69E5 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Regular.ttf"; path = "Assets/Fonts/Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		03BB18DF1D937C7E00DB69E5 /* Fragmentcore.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fragmentcore.otf; path = Assets/Fonts/Fragmentcore.otf; sourceTree = "<group>"; };
+		03BB18E01D937C7E00DB69E5 /* minimal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = minimal.otf; path = Assets/Fonts/minimal.otf; sourceTree = "<group>"; };
+		03BB18E11D937C7E00DB69E5 /* NixieOne.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NixieOne.ttf; path = Assets/Fonts/NixieOne.ttf; sourceTree = "<group>"; };
+		03BB18E21D937C7E00DB69E5 /* rm_typerighter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = rm_typerighter.ttf; path = Assets/Fonts/rm_typerighter.ttf; sourceTree = "<group>"; };
+		03BB18E31D937C7E00DB69E5 /* Rounded_Elegance.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Rounded_Elegance.ttf; path = Assets/Fonts/Rounded_Elegance.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +117,7 @@
 		03BB188A1D935B2C00DB69E5 = {
 			isa = PBXGroup;
 			children = (
+				03BB18CE1D937AC200DB69E5 /* Assets */,
 				03BB18951D935B2D00DB69E5 /* MW01_Singh_Anusha */,
 				03BB18AA1D935B2D00DB69E5 /* MW01_Singh_AnushaTests */,
 				03BB18B51D935B2D00DB69E5 /* MW01_Singh_AnushaUITests */,
@@ -97,8 +138,9 @@
 		03BB18951D935B2D00DB69E5 /* MW01_Singh_Anusha */ = {
 			isa = PBXGroup;
 			children = (
+				03BB18CA1D9373F500DB69E5 /* VC1.swift */,
+				03BB18CB1D9373F500DB69E5 /* VC2.swift */,
 				03BB18961D935B2D00DB69E5 /* AppDelegate.swift */,
-				03BB18981D935B2D00DB69E5 /* ViewController.swift */,
 				03BB189A1D935B2D00DB69E5 /* Main.storyboard */,
 				03BB189D1D935B2D00DB69E5 /* Assets.xcassets */,
 				03BB189F1D935B2D00DB69E5 /* LaunchScreen.storyboard */,
@@ -123,6 +165,48 @@
 				03BB18B81D935B2D00DB69E5 /* Info.plist */,
 			);
 			path = MW01_Singh_AnushaUITests;
+			sourceTree = "<group>";
+		};
+		03BB18CE1D937AC200DB69E5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				03BB18D01D937ACF00DB69E5 /* Fonts */,
+				03BB18CF1D937AC900DB69E5 /* Images */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		03BB18CF1D937AC900DB69E5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		03BB18D01D937ACF00DB69E5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				03BB18D11D937C7E00DB69E5 /* ABEAKRG.TTF */,
+				03BB18D21D937C7E00DB69E5 /* abeatbyKaiRegular.otf */,
+				03BB18D31D937C7E00DB69E5 /* Biko_Black.otf */,
+				03BB18D41D937C7E00DB69E5 /* Biko_Bold.otf */,
+				03BB18D51D937C7E00DB69E5 /* Biko_Light Readme.rtf */,
+				03BB18D61D937C7E00DB69E5 /* Biko_Light-Restricted.otf */,
+				03BB18D71D937C7E00DB69E5 /* Biko_Regular.otf */,
+				03BB18D81D937C7E00DB69E5 /* CaviarDreams_Bold.ttf */,
+				03BB18D91D937C7E00DB69E5 /* CaviarDreams_BoldItalic.ttf */,
+				03BB18DA1D937C7E00DB69E5 /* CaviarDreams_Italic.ttf */,
+				03BB18DB1D937C7E00DB69E5 /* CaviarDreams.ttf */,
+				03BB18DC1D937C7E00DB69E5 /* Comfortaa-Bold.ttf */,
+				03BB18DD1D937C7E00DB69E5 /* Comfortaa-Light.ttf */,
+				03BB18DE1D937C7E00DB69E5 /* Comfortaa-Regular.ttf */,
+				03BB18DF1D937C7E00DB69E5 /* Fragmentcore.otf */,
+				03BB18E01D937C7E00DB69E5 /* minimal.otf */,
+				03BB18E11D937C7E00DB69E5 /* NixieOne.ttf */,
+				03BB18E21D937C7E00DB69E5 /* rm_typerighter.ttf */,
+				03BB18E31D937C7E00DB69E5 /* Rounded_Elegance.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +316,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03BB18F51D937C7E00DB69E5 /* rm_typerighter.ttf in Resources */,
+				03BB18F01D937C7E00DB69E5 /* Comfortaa-Light.ttf in Resources */,
+				03BB18E61D937C7E00DB69E5 /* Biko_Black.otf in Resources */,
+				03BB18F31D937C7E00DB69E5 /* minimal.otf in Resources */,
+				03BB18F41D937C7E00DB69E5 /* NixieOne.ttf in Resources */,
+				03BB18E81D937C7E00DB69E5 /* Biko_Light Readme.rtf in Resources */,
+				03BB18EF1D937C7E00DB69E5 /* Comfortaa-Bold.ttf in Resources */,
+				03BB18F11D937C7E00DB69E5 /* Comfortaa-Regular.ttf in Resources */,
+				03BB18E41D937C7E00DB69E5 /* ABEAKRG.TTF in Resources */,
+				03BB18F21D937C7E00DB69E5 /* Fragmentcore.otf in Resources */,
+				03BB18E91D937C7E00DB69E5 /* Biko_Light-Restricted.otf in Resources */,
 				03BB18A11D935B2D00DB69E5 /* LaunchScreen.storyboard in Resources */,
 				03BB189E1D935B2D00DB69E5 /* Assets.xcassets in Resources */,
 				03BB189C1D935B2D00DB69E5 /* Main.storyboard in Resources */,
+				03BB18EA1D937C7E00DB69E5 /* Biko_Regular.otf in Resources */,
+				03BB18ED1D937C7E00DB69E5 /* CaviarDreams_Italic.ttf in Resources */,
+				03BB18F61D937C7E00DB69E5 /* Rounded_Elegance.ttf in Resources */,
+				03BB18E71D937C7E00DB69E5 /* Biko_Bold.otf in Resources */,
+				03BB18EE1D937C7E00DB69E5 /* CaviarDreams.ttf in Resources */,
+				03BB18EB1D937C7E00DB69E5 /* CaviarDreams_Bold.ttf in Resources */,
+				03BB18E51D937C7E00DB69E5 /* abeatbyKaiRegular.otf in Resources */,
+				03BB18EC1D937C7E00DB69E5 /* CaviarDreams_BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +362,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03BB18991D935B2D00DB69E5 /* ViewController.swift in Sources */,
+				03BB18CD1D9373F500DB69E5 /* VC2.swift in Sources */,
+				03BB18CC1D9373F500DB69E5 /* VC1.swift in Sources */,
 				03BB18971D935B2D00DB69E5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
