@@ -19,7 +19,7 @@ class VC1: UIViewController
     @IBOutlet weak var showStatsButton: UIButton!
     
     var startTime: Double = 0.0
-    var currenttime: Double = 0.0
+    var currentTime: Double = 0.0
     var elapsedTime: Double = 0.0
     var lapTime: Double = 0.0
     var totalTime: Double = 0.0
@@ -50,6 +50,13 @@ class VC1: UIViewController
     func UpdateTimeForCurrentLap()
     {
         print("New Lap Started at " + String(startTime))
+        currentTime = NSDate.timeIntervalSinceReferenceDate
+        
+        elapsedTime = currentTime - startTime
+        totalTime += elapsedTime;
+        
+        currentLapLabel.text = "Current Lap: " + String(elapsedTime)
+        totalTimeLabel.text = "Total Time: " + String(totalTime)
     }
     
     func StartNewLap()
