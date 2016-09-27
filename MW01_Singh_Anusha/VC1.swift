@@ -14,9 +14,25 @@ class VC1: UIViewController
     @IBOutlet weak var totalTimeLabel: UILabel!
     @IBOutlet weak var numberOfLapsLabel: UILabel!
 
+    @IBOutlet weak var startStopToggleButton: UIButton!
+    @IBOutlet weak var newLapButton: UIButton!
+    @IBOutlet weak var showStatsButton: UIButton!
+    
+    var startTime: Double = 0.0
+    var currenttime: Double = 0.0
+    var elapsedTime: Double = 0.0
+    var lapTime: Double = 0.0
+    var totalTime: Double = 0.0
+    var finishTime: Double = 0.0
+    
+    var numberOfLaps: Int = 0
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        newLapButton.isEnabled = false
+        showStatsButton.isEnabled = false
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -31,15 +47,44 @@ class VC1: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
+    func UpdateTimeForCurrentLap()
+    {
+        print("New Lap Started at " + String(startTime))
+    }
+    
+    func StartNewLap()
+    {
+        startTime = NSDate.timeIntervalSinceReferenceDate
+        UpdateTimeForCurrentLap()
+        
+    }
+    
     @IBAction func StartButtonClicked(_ sender: AnyObject)
     {
+        if(startStopToggleButton.title(for: UIControlState.normal) == "Start")
+        {
+            startStopToggleButton.setTitle("Stop", for: UIControlState.normal)
+            newLapButton.isEnabled = true
+            
+            StartNewLap()
+            
+            numberOfLaps += 1
+            numberOfLapsLabel.text = "Number Of Laps: " + String(numberOfLaps)
+        }
+        else
+        {
+            startStopToggleButton.setTitle("Start", for: UIControlState.normal)
+        }
     }
     
-    @IBAction func StopButtonClicked(_ sender: AnyObject)
+    @IBAction func NewLapButtonClicked(_ sender: AnyObject)
     {
+        
     }
     
-    @IBAction func ShowStatsButtonClicked(_ sender: AnyObject) {
+    @IBAction func ShowStatsButtonClicked(_ sender: AnyObject)
+    {
+        
     }
     
     
