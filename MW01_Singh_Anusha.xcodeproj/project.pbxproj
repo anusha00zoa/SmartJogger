@@ -18,6 +18,7 @@
 		03BB18CC1D9373F500DB69E5 /* VC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BB18CA1D9373F500DB69E5 /* VC1.swift */; };
 		03BB18F31D937C7E00DB69E5 /* minimal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03BB18E01D937C7E00DB69E5 /* minimal.otf */; };
 		03C30BB01D9F193D005573DF /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C30BAF1D9F193D005573DF /* VC2.swift */; };
+		03C30BB21D9F572F005573DF /* VC2EmbeddedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C30BB11D9F572F005573DF /* VC2EmbeddedTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		03BB18CA1D9373F500DB69E5 /* VC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC1.swift; sourceTree = "<group>"; };
 		03BB18E01D937C7E00DB69E5 /* minimal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = minimal.otf; path = Assets/Fonts/minimal.otf; sourceTree = "<group>"; };
 		03C30BAF1D9F193D005573DF /* VC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
+		03C30BB11D9F572F005573DF /* VC2EmbeddedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC2EmbeddedTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				03C30BAF1D9F193D005573DF /* VC2.swift */,
 				03BB18CA1D9373F500DB69E5 /* VC1.swift */,
+				03C30BB11D9F572F005573DF /* VC2EmbeddedTableViewController.swift */,
 				03BB18961D935B2D00DB69E5 /* AppDelegate.swift */,
 				03BB189A1D935B2D00DB69E5 /* Main.storyboard */,
 				03BB189D1D935B2D00DB69E5 /* Assets.xcassets */,
@@ -301,6 +304,7 @@
 				03C30BB01D9F193D005573DF /* VC2.swift in Sources */,
 				03BB18CC1D9373F500DB69E5 /* VC1.swift in Sources */,
 				03BB18971D935B2D00DB69E5 /* AppDelegate.swift in Sources */,
+				03C30BB21D9F572F005573DF /* VC2EmbeddedTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

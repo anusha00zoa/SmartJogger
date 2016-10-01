@@ -28,7 +28,7 @@ class VC1: UIViewController
     
     var jogTimer: Timer!
     
-    public var lapData: [(String, String)] = []
+    public var lapData: [String] = []
     
     override func viewDidLoad()
     {
@@ -76,7 +76,6 @@ class VC1: UIViewController
         
         currentLapLabel.text = "Current Lap: " + ConvertToFormat(time: elapsedTime)
         totalTimeLabel.text = "Total Time: " + ConvertToFormat(time: totalTime)
-        
     }
     
     @IBAction func StartButtonClicked(_ sender: AnyObject)
@@ -85,6 +84,7 @@ class VC1: UIViewController
         {
             startStopToggleButton.setTitle("STOP", for: .normal)
             
+            //enable New Lap button
             newLapButton.isEnabled = true
             newLapButton.backgroundColor = UIColor.lightGray.withAlphaComponent(0.75)
             numberOfLaps = 1
@@ -97,12 +97,16 @@ class VC1: UIViewController
         else
         {
             startStopToggleButton.setTitle("START", for: .normal)
+            
+            //disable Start button
             startStopToggleButton.isEnabled = false
             startStopToggleButton.backgroundColor = UIColor.darkGray
-
+            
+            //disable New Lap button
             newLapButton.isEnabled = false
             newLapButton.backgroundColor = UIColor.darkGray
             
+            //enable Show Stats button
             showStatsButton.isEnabled = true
             showStatsButton.backgroundColor = UIColor.lightGray.withAlphaComponent(0.75)
             
@@ -113,9 +117,17 @@ class VC1: UIViewController
     
     @IBAction func NewLapButtonClicked(_ sender: AnyObject)
     {
+        lapTime = elapsedTime
+        lapData.append(ConvertToFormat(time: lapTime))
+        
         numberOfLaps +=  1
         numberOfLapsLabel.text = "Number Of Laps: " + String(numberOfLaps)
-    }
+        
+        jogTimer.invalidate()
+        let sel : Selector = #selector(VC1.TimeTakenForCurrentLap)
+        jogTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: sel, userInfo: nil, repeats: true)
+        startTime = NSDate.timeIntervalSinceReferenceDate
+   }
     
     @IBAction func ShowStatsButtonClicked(_ sender: AnyObject)
     {
