@@ -31,7 +31,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="V1k-2u-1tF">
                                             <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <segue destination="buY-OL-5zB" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="yN1-7B-qYd"/>
+                                                <segue destination="buY-OL-5zB" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="yN1-7B-qYd"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -80,11 +80,11 @@
                         <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="averageLapLabel" destination="b9i-8T-sjd" id="FH9-HS-hyV"/>
-                        <outlet property="fastestLapLabel" destination="dOO-YY-bN8" id="GpH-aj-UKE"/>
-                        <outlet property="lapTableView" destination="k29-3o-zKM" id="dyi-29-6z5"/>
-                        <outlet property="navBar" destination="t1M-sY-a2s" id="B81-Pc-nyr"/>
-                        <outlet property="slowestLapLabel" destination="Yhq-Vq-znh" id="u97-ms-pdw"/>
+                        <outlet property="averageLapLabel" destination="b9i-8T-sjd" id="ueD-2F-8W4"/>
+                        <outlet property="fastestLapLabel" destination="dOO-YY-bN8" id="Gas-cV-Jd8"/>
+                        <outlet property="lapTableView" destination="k29-3o-zKM" id="BRN-2T-0lP"/>
+                        <outlet property="navBar" destination="t1M-sY-a2s" id="L4d-yI-2SR"/>
+                        <outlet property="slowestLapLabel" destination="Yhq-Vq-znh" id="5gA-yI-QR9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="opn-fv-StE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -110,7 +110,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Smart Jogger" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fs-aj-gd3">
                                 <frame key="frameInset" minX="156" minY="28" width="238" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Minimal" family="Minimal" pointSize="62"/>
+                                <fontDescription key="fontDescription" name="Minimal" family="Minimal" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="1" height="1"/>
@@ -150,24 +150,38 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Minimal" family="Minimal" pointSize="20"/>
-                                <state key="normal" title="Start">
+                                <state key="normal" title="START">
                                     <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="StartButtonClicked:" destination="buY-OL-5zB" eventType="touchUpInside" id="5fb-ri-gFu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcd-9Z-gms" userLabel="New Lap Button">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcd-9Z-gms" userLabel="New Lap Button">
                                 <frame key="frameInset" minX="147" minY="538" width="120" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Minimal" family="Minimal" pointSize="20"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="New Lap">
+                                <state key="normal" title="NEW LAP">
                                     <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="NewLapButtonClicked:" destination="buY-OL-5zB" eventType="touchUpInside" id="Ecd-Al-YTa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92r-qD-EC2">
+                                <frame key="frameInset" minX="137" minY="596" width="140" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Minimal" family="Minimal" pointSize="20"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="SHOW STATS">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ShowStatsButtonClicked:" destination="buY-OL-5zB" eventType="touchUpInside" id="joE-I7-HJP"/>
+                                    <segue destination="Bhg-YO-Sil" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="0hG-gL-EP0"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S5D-1d-0CE">
@@ -181,20 +195,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92r-qD-EC2">
-                                <frame key="frameInset" minX="137" minY="596" width="140" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Minimal" family="Minimal" pointSize="20"/>
-                                <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="Show stats">
-                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="ShowStatsButtonClicked:" destination="buY-OL-5zB" eventType="touchUpInside" id="joE-I7-HJP"/>
-                                    <segue destination="Bhg-YO-Sil" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Bls-js-gkm"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>

@@ -43,13 +43,7 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Biko</string>
-		<string>Caviar Dreams</string>
-		<string>Comfortaa</string>
-		<string>Fragment Core</string>
 		<string>Minimal</string>
-		<string>Nixie One</string>
-		<string>Rounded Elegance</string>
 	</array>
 </dict>
 </plist>
