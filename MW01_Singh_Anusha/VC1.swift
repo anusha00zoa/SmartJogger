@@ -28,14 +28,20 @@ class VC1: UIViewController
     
     var jogTimer: Timer!
     
-    public var lapData: [String] = []
+    var lapDataUsable: [Double] = []
+    var lapData: [String] = []
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
         newLapButton.isEnabled = false
+        newLapButton.backgroundColor = UIColor.lightGray
+        
         showStatsButton.isEnabled = false
+        showStatsButton.backgroundColor = UIColor.lightGray
+        
+        startStopToggleButton.backgroundColor = UIColor.white
     }
 
     override func didReceiveMemoryWarning()
@@ -43,7 +49,9 @@ class VC1: UIViewController
         super.didReceiveMemoryWarning()
     }
     
-    func ConvertToFormat(time: Double) -> String
+    
+    //utility function to convert time in seconds to time in the desired format
+    public func ConvertToFormat(time: Double) -> String
     {
         var strTime: String = ""
         
@@ -86,7 +94,7 @@ class VC1: UIViewController
             
             //enable New Lap button
             newLapButton.isEnabled = true
-            newLapButton.backgroundColor = UIColor.lightGray.withAlphaComponent(0.75)
+            newLapButton.backgroundColor = UIColor.white
             numberOfLaps = 1
             numberOfLapsLabel.text = "Number Of Laps: " + String(numberOfLaps)
             
@@ -100,29 +108,35 @@ class VC1: UIViewController
             
             //disable Start button
             startStopToggleButton.isEnabled = false
-            startStopToggleButton.backgroundColor = UIColor.darkGray
+            startStopToggleButton.backgroundColor = UIColor.lightGray
             
             //disable New Lap button
             newLapButton.isEnabled = false
-            newLapButton.backgroundColor = UIColor.darkGray
+            newLapButton.backgroundColor = UIColor.lightGray
             
             //enable Show Stats button
             showStatsButton.isEnabled = true
-            showStatsButton.backgroundColor = UIColor.lightGray.withAlphaComponent(0.75)
+            showStatsButton.backgroundColor = UIColor.white
             
+            //stop timer and add last lap info to the data source
             jogTimer.invalidate()
-            
+            lapTime = elapsedTime
+            lapData.append(ConvertToFormat(time: lapTime))
+            lapDataUsable.append(lapTime)
         }
     }
     
     @IBAction func NewLapButtonClicked(_ sender: AnyObject)
     {
+        //convert to desired format for display
         lapTime = elapsedTime
         lapData.append(ConvertToFormat(time: lapTime))
+        lapDataUsable.append(lapTime)
         
         numberOfLaps +=  1
         numberOfLapsLabel.text = "Number Of Laps: " + String(numberOfLaps)
         
+        //restart timer for new lap
         jogTimer.invalidate()
         let sel : Selector = #selector(VC1.TimeTakenForCurrentLap)
         jogTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: sel, userInfo: nil, repeats: true)
@@ -132,5 +146,42 @@ class VC1: UIViewController
     @IBAction func ShowStatsButtonClicked(_ sender: AnyObject)
     {
         
+    }
+    
+    @IBAction func ResetButtonClicked(_ sender: AnyObject)
+    {
+        lapDataUsable.removeAll()
+        lapData.removeAll()
+        
+        currentTime = 0.0
+        elapsedTime = 0.0
+        lapTime = 0.0
+        currentLapLabel.text = "Current Time: 0:00.0"
+
+        totalTime = 0.0
+        totalTimeLabel.text = "Total Time: 0:00.0"
+        
+        numberOfLaps = 0
+        numberOfLapsLabel.text = "Number Of Laps: 0"
+        
+        newLapButton.isEnabled = false
+        newLapButton.backgroundColor = UIColor.lightGray
+        
+        showStatsButton.isEnabled = false
+        showStatsButton.backgroundColor = UIColor.lightGray
+        
+        startStopToggleButton.isEnabled = true
+        startStopToggleButton.backgroundColor = UIColor.white
+    }
+    
+    //MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "showStatsSegue"
+        {
+            let vc2Controller = segue.destination as! VC2
+            vc2Controller.lapTableViewPopulateData = lapData
+            vc2Controller.lapTableViewUsable = lapDataUsable
+        }
     }
 }
